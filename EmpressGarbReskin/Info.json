@@ -1,0 +1,13 @@
+{
+	"Id": "EmpressGarbReskin",
+	"DisplayName": "EmpressGarbReskin",
+	"Author": "Silvergriffon",
+	"Version": "0.0.1",
+	"ManagerVersion": "0.23.4",
+	"Requirements": [ "SolastaModApi" ],
+	"LoadAfter": [ "SolastaModApi" ],
+	"AssemblyName": "EmpressGarbReskin.dll",
+	"EntryMethod": "EmpressGarbReskin.Main.Load",
+	"Repository": "https://raw.githubusercontent.com/Silvergriffon/EmpressGarbReskin/main/EmpressGarbReskin/Repository.json",
+	"HomePage": "https://www.nexusmods.com/solastacrownofthemagister/mods/##"
+}

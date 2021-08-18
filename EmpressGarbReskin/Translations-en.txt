@@ -1,0 +1,2 @@
+EmpressGarbReskin/&FancySkeletonTitle	Fancy Skeleton
+EmpressGarbReskin/&FancySkeletonDescription	I'm a fancy skeleton
