@@ -6,6 +6,8 @@ Studded Leather
 Elven Chain
 Wizard's Clothing
 
+Option to set the Belt Of Dwarvenkind to Always grow a glorious beard, Never grow one, or Standard (50% chance).
+
 # How to Compile
 
 0. Install all required development pre-requisites:
