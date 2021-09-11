@@ -92,6 +92,31 @@ namespace EmpressGarbReskin
                 clotheswizard_empress.SetItemPresentation(DatabaseHelper.ItemDefinitions.WizardClothes_Alternate.ItemPresentation);
             }
 
+            if (Main.Settings.Beard == "Standard")
+            {
+                return;
+            }
+
+            if (Main.Settings.Beard == "Always")
+            {
+                FeatureDefinitionCharacterPresentation beardedBelt = DatabaseHelper.FeatureDefinitionCharacterPresentations.CharacterPresentationBeltOfDwarvenKind;
+                beardedBelt.SetOccurencePercentage(100);
+                beardedBelt.GuiPresentation.SetDescription("EmpressGarbReskin/&AlwaysBeardDescription");
+            }
+
+            if (Main.Settings.Beard == "Never")
+            {
+                ItemDefinition beardlessBelt = DatabaseHelper.ItemDefinitions.BeltOfDwarvenKind;
+                for (int i = 0; i < beardlessBelt.StaticProperties.Count; i++)
+                {
+                    if (beardlessBelt.StaticProperties[i].FeatureDefinition.GUID == DatabaseHelper.FeatureDefinitionCharacterPresentations.CharacterPresentationBeltOfDwarvenKind.GUID)
+                    {
+                        beardlessBelt.StaticProperties.RemoveAt(i);
+                        break;
+                    }
+                }
+            }
+
         }
     }
 }

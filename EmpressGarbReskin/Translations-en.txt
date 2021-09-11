@@ -1,2 +1,3 @@
-EmpressGarbReskin/&FancySkeletonTitle	Fancy Skeleton
-EmpressGarbReskin/&FancySkeletonDescription	I'm a fancy skeleton
+EmpressGarbReskin/&EmpressGarbReskinTitle	Empress Garb Reskin
+EmpressGarbReskin/&EmpressGarbReskinDescription	Change Empress Garb appearance.
+EmpressGarbReskin/&AlwaysBeardDescription	100% chance to grow a glorious beard!
