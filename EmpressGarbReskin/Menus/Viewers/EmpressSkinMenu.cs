@@ -6,7 +6,7 @@ using static EmpressGarbReskin.Main;
 
 namespace EmpressGarbReskin.Menus.Viewers
 {
-    public class SampleModMenu1 : IMenuSelectablePage
+    public class EmpressGarbReskinMenu1 : IMenuSelectablePage
     {
         public string Name => "Empress Garb Skin Menu";
 
@@ -25,7 +25,23 @@ namespace EmpressGarbReskin.Menus.Viewers
                 {
                     Main.Settings.Skin = skins[skinChoice];
                 }
-            });            
+            });
+
+            var gloriousBeard = new List<string> { "Standard", "Always", "Never" };
+            var beardChance = Math.Max(gloriousBeard.FindIndex(x => x == Main.Settings.Beard), 0);
+
+            UI.Label("");
+            UI.Label("");
+            UI.Label("Belt of Dwarvenkind Beard".yellow().bold());
+
+            UI.HStack("", 10, () => {
+                if (UI.SelectionGrid(ref beardChance, gloriousBeard.ToArray(), gloriousBeard.Count, UI.AutoWidth()))
+                {
+                    Main.Settings.Beard = gloriousBeard[beardChance];
+                }
+            });
+
+            UI.Label("");
         }
 
         public void OnGUI(UnityModManager.ModEntry modEntry)
