@@ -31,7 +31,6 @@ namespace EmpressGarbReskin.Menus.Viewers
             var beardChance = Math.Max(gloriousBeard.FindIndex(x => x == Main.Settings.Beard), 0);
 
             UI.Label("");
-            UI.Label("");
             UI.Label("Belt of Dwarvenkind Beard".yellow().bold());
 
             UI.HStack("", 10, () => {
@@ -41,7 +40,18 @@ namespace EmpressGarbReskin.Menus.Viewers
                 }
             });
 
+            var sylvanClothing = new List<string> { "Wizard Only", "Everyone" };
+            var sylvanChoice = Math.Max(sylvanClothing.FindIndex(x => x == Main.Settings.SylvanArmor), 0);
+
             UI.Label("");
+            UI.Label("Sylvan Armor Equippable By:".yellow().bold());
+            UI.HStack("", 10, () => {
+                if (UI.SelectionGrid(ref sylvanChoice, sylvanClothing.ToArray(), sylvanClothing.Count, UI.AutoWidth()))
+                {
+                    Main.Settings.SylvanArmor = sylvanClothing[sylvanChoice];
+                }
+            });
+
         }
 
         public void OnGUI(UnityModManager.ModEntry modEntry)
