@@ -8,6 +8,8 @@ Wizard's Clothing
 
 Option to set the Belt Of Dwarvenkind to Always grow a glorious beard, Never grow one, or Standard (50% chance).
 
+Option to allow Sylvan Armor to be equippable by all character classes instead of just Wizard.
+
 # How to Compile
 
 0. Install all required development pre-requisites:
