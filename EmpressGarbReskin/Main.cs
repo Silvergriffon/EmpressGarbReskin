@@ -64,10 +64,12 @@ namespace EmpressGarbReskin
 
         internal static void OnGameReady()
         {
-            if (Main.Settings.Skin == "Normal")
+            if (Main.Settings.SylvanArmor == "Everyone")
             {
-                return;
+                ItemDefinition sylvanArmor = DatabaseHelper.ItemDefinitions.GreenmageArmor;
+                sylvanArmor.RequiredAttunementClasses.Clear();
             }
+
             if (Main.Settings.Skin == "Plain Shirt")
             {
                 ItemDefinition plain_empress = DatabaseHelper.ItemDefinitions.Enchanted_ChainShirt_Empress_war_garb;
@@ -90,11 +92,6 @@ namespace EmpressGarbReskin
             {
                 ItemDefinition clotheswizard_empress = DatabaseHelper.ItemDefinitions.Enchanted_ChainShirt_Empress_war_garb;
                 clotheswizard_empress.SetItemPresentation(DatabaseHelper.ItemDefinitions.WizardClothes_Alternate.ItemPresentation);
-            }
-
-            if (Main.Settings.Beard == "Standard")
-            {
-                return;
             }
 
             if (Main.Settings.Beard == "Always")
