@@ -52,6 +52,9 @@ namespace EmpressGarbReskin.Menus.Viewers
                 }
             });
 
+            UI.Label("");
+            UI.Toggle("Invisible Crown of the Magister".yellow().bold(), ref Main.Settings.InvisbleCrown, 0, UI.AutoWidth());
+
         }
 
         public void OnGUI(UnityModManager.ModEntry modEntry)
