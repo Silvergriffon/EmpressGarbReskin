@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using System.Collections.Generic;
 using UnityModManagerNet;
 using SolastaModApi;
 using ModKit;
@@ -112,6 +113,46 @@ namespace EmpressGarbReskin
                         break;
                     }
                 }
+            }
+
+            if (Main.Settings.InvisbleCrown == true)
+            {
+                GraphicsCharacterDefinitions.BodyPartBehaviour[] invisible_crown = new GraphicsCharacterDefinitions.BodyPartBehaviour[]
+                {
+                GraphicsCharacterDefinitions.BodyPartBehaviour.Shape, GraphicsCharacterDefinitions.BodyPartBehaviour.Shape,
+                GraphicsCharacterDefinitions.BodyPartBehaviour.Keep, GraphicsCharacterDefinitions.BodyPartBehaviour.Keep,
+                GraphicsCharacterDefinitions.BodyPartBehaviour.Keep, GraphicsCharacterDefinitions.BodyPartBehaviour.Keep,
+                GraphicsCharacterDefinitions.BodyPartBehaviour.Keep, GraphicsCharacterDefinitions.BodyPartBehaviour.Keep,
+                GraphicsCharacterDefinitions.BodyPartBehaviour.Keep, GraphicsCharacterDefinitions.BodyPartBehaviour.Keep
+                };
+
+                ItemDefinition invisibleCrownOfTheMagister = DatabaseHelper.ItemDefinitions.CrownOfTheMagister;
+                ItemDefinition invisibleCrownOfTheMagister01 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister01;
+                ItemDefinition invisibleCrownOfTheMagister02 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister02;
+                ItemDefinition invisibleCrownOfTheMagister03 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister03;
+                ItemDefinition invisibleCrownOfTheMagister04 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister04;
+                ItemDefinition invisibleCrownOfTheMagister05 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister05;
+                ItemDefinition invisibleCrownOfTheMagister06 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister06;
+                ItemDefinition invisibleCrownOfTheMagister07 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister07;
+                ItemDefinition invisibleCrownOfTheMagister08 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister08;
+                ItemDefinition invisibleCrownOfTheMagister09 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister09;
+                ItemDefinition invisibleCrownOfTheMagister10 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister10;
+                ItemDefinition invisibleCrownOfTheMagister11 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister11;
+                ItemDefinition invisibleCrownOfTheMagister12 = DatabaseHelper.ItemDefinitions.CrownOfTheMagister12;
+
+                invisibleCrownOfTheMagister.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister01.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister02.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister03.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister04.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister05.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister06.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister07.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister08.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister09.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister10.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister11.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
+                invisibleCrownOfTheMagister12.ItemPresentation.SetMaleBodyPartBehaviours(invisible_crown);
             }
 
         }

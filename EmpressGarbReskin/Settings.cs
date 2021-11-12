@@ -12,5 +12,6 @@ namespace EmpressGarbReskin
         public string Skin = "Normal";
         public string Beard = "Standard";
         public string SylvanArmor = "Wizard Only";
+        public bool InvisbleCrown = false;
     }
 }
