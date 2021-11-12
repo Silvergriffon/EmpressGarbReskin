@@ -10,6 +10,8 @@ Option to set the Belt Of Dwarvenkind to Always grow a glorious beard, Never gro
 
 Option to allow Sylvan Armor to be equippable by all character classes instead of just Wizard.
 
+Option to make the Crown of the Magister invisble when equipped.
+
 # How to Compile
 
 0. Install all required development pre-requisites:
